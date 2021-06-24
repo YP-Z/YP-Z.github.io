@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TodoMVC example</title>
+  <meta content="initial-scale=1,maximum-scale=1,user-scalable=no,width=980px" name="viewport"/>
+  <link rel="stylesheet" href="TodoMVC.css">
+</head>
+<body>
+  <div class="todoapp">
+    <section>
+    <header class="header">
+      <!-- Add New Item -->
+      <input class="new-todo" type="text" placeholder="What needs to be done?" autofocus>
+      <button class="add-newone" type="button">ADD</button>
+    </header>
+
+    <section class="main">
+      <input class="toggle-all" type="checkbox">
+      <!-- Show List -->
+      <ul class="todo-list"></ul>
+    </section>
+    </section>
+    <section>
+      <footer class="footer">
+        <span class="todo-count"></span>
+        <button class="clear-completed">Clear completed</button>
+      </footer>
+    </section>
+  </div>
+  <script src="model.js"></script>
+  <script src="provider-localStorage.js"></script>
+  <script src="TodoMVC.js"></script>
+</body>
+</html>
